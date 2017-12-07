@@ -1,0 +1,338 @@
+/*
+Project Name: 	mollabd.com e-commerce site.;
+Description: 	This website is created for online shopping site.;
+Date: 			260june 2017
+Technologies: 	html, css, javascript, illustrator, photoshop, jquery;
+Color: 			;
+Layout: 		Double column template.
+Company:		mollabd Limited;
+Designer:       Imran Molla;
+Developers: 	Imran Molla  ;
+
+*/
+
+
+/*=================================================
+ |               css for  header                    |
+===================================================                */
+
+        /*body{background:#777 url("../images/bg.jpg");}*/
+
+
+
+*{margin: 0;padding: 0;outline: 0;}
+body{
+	font-family: arial; font-size: 14px; color:#000;
+  background: url(images/bg.png ) repeat fixed 0 0 #fff;
+	position: relative;
+}
+.clear{overflow:hidden;}
+.fLeft{float: left;}
+.fRight{float: right;}
+.cLeft{clear: left;}
+.cRight{clear: right;}
+.cBoth{clear: both;}
+
+.templete{
+	width: 960px;
+	margin: 0 auto;
+}
+.HeaderSection{
+	 background:#2F2D2E ;color: #fff;
+}
+
+.slidersection{}
+
+.logo{ width: 560px; }
+.logo img {
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  width: 90px;
+}
+.logo h2 {
+  margin-top: 35px;
+  font-size: 40px;
+}
+.logo p{}
+.Social{ width: 400px;}
+.Social img {
+  float: right;
+  margin: 2px;
+  width: 60px;
+}
+
+.navsection {
+  background: none repeat scroll 0 0 #e6af4b;
+  min-height: 38px;
+}
+.navsection ul{margin:0;padding:0;list-style:none;}
+.navsection ul li {
+  border-left: 1px solid #fdc662;
+  border-right: 1px solid #c18a26;
+  display: block;
+  float: left;
+  position:relative;
+}
+.navsection ul li:first-child{border-left: 0px solid #fdc662;}
+.navsection ul li:last-child{border-right: 0px solid #c18a26;}
+
+.navsection ul li a {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
+  -webkit-transition:.5s;
+  -moz-transition:.5s;
+  -o-transition:.5s;
+  transition:.5s;
+}
+.navsection ul li a:hover, #active{background:#FEF4E5;color:#333;transition:.35s;}
+
+.navsection ul li ul {
+  left: -999999px;
+  position: absolute;
+  z-index: 999;
+}
+.navsection ul li:hover ul{left:0px;}
+.navsection ul li ul li{background:#E6AF4B;width:200px;border-bottom:1px solid #CA932F;float: none;border-left:0px solid #fdc662;border-right:0px solid #c18a26;}
+.navsection ul li ul li:last-child{border-bottom:0px solid #CA932F;}
+.navsection ul li ul li a{}
+
+
+.item{
+position:relative;
+margin:200px 0;
+ width:300px;
+ height:200px;
+ overflow:hidden;
+}
+.item img {
+ width:300px;
+ height:200px;
+
+}
+.overlay{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.5);
+  top:-100%;
+  transition:.8s;
+}
+.item:hover .overlay{top:0}
+.Contant{
+	background: #FFFFFF;
+}
+.MainContant {
+  background: #dfdfdf none repeat scroll 0 0;
+  margin: 10px 10px 10px 0;
+  padding: 10px;
+  width: 650px;
+}
+
+.about{}
+.about h2 {
+  border-bottom: 1px solid;
+  font-size: 40px;
+}
+.about img {
+  width: 620px;
+  padding: 10px;
+  margin: 5px;
+  background: #fff;
+}
+.about p{
+   font-size: 16px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+.relatedpost{}
+.relatedpost h2 {
+  background: gray none repeat scroll 0 0;
+  border-bottom: 1px solid;
+  font-size: 30px;
+  padding-left: 10px;
+  text-align: center;
+}
+.relatedpost img {
+  height: 100px;
+  margin-bottom: 20px;
+  width: 184px;
+  padding: 10px;
+}
+.relatedpost img:hover{
+ opacity: 0.4;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.contact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.Samepost{
+	overflow: hidden;
+}
+.Samepost h2 {
+  border-bottom: 2px solid;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 24px;
+  
+}
+.Samepost img {
+  background: #fff none repeat scroll 0 0;
+  float: left;
+  margin-right: 10px;
+  padding: 5px;
+  width: 200px;
+  border: 1px solid #9B999A;
+}
+.Samepost p {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+.popular{}
+.popular h3 {
+ /* font-weight: normal;*/
+  font-size: 20px;
+  border-bottom: 1px dashed;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+ 
+}
+.popular h3 a {
+   text-decoration: none; color: gray;
+}
+.popular img {
+  float: left;
+  width: 55px;
+  height: 40px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  background: #fff;
+  padding: 3px;
+  border: 1px solid #fbfbfb;
+  border-radius:30px;
+}
+.popular p{}
+
+
+a.more { 
+  clear: both; 
+  display: block; 
+  width: 103px; 
+  height: 30px; 
+  line-height: 30px; 
+  text-align: center; 
+  color: #000; 
+  font-weight: bold; 
+  text-decoration: none;
+  background: url(images/tooplate_button.png); 
+}
+
+a.more:hover { 
+  text-decoration: none; 
+  color: #fff; 
+}
+/*.readMore{
+ overflow: hidden;
+ float: right;
+ 
+}*/
+/*.readMore p{
+	background: gray;
+	
+	border: 1px solid;
+	display: block;
+
+}
+.readMore a{
+	text-decoration: none;
+}*/
+.SiteBar {
+  background: #DFDFDF  none repeat scroll 0 0;
+  margin: 10px 0 10px 10px;
+  padding: 10px;
+  width: 225px;
+}
+.SameSitebar{}
+.SameSitebar h2 {
+  background: #2F2D2E;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.SameSitebar ul{
+padding: 0;
+margin: 0;
+list-style: none;
+text-align: center;
+}
+.SameSitebar ul li{
+  padding: 10px 10px;
+  border-bottom: 1px dashed #000;
+}
+.SameSitebar ul li:last-child{
+    border-bottom: 0px dashed #000;
+}
+.SameSitebar ul li a{
+ text-decoration: none;
+
+}
+
+
+.footersection {
+  background: #2F2D2E none repeat scroll 0 0;
+  height: 90px;
+  text-align: center;
+  overflow: hidden;
+}
+.footermenu {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+.footermenu ul{padding:0;margin:0;list-style:none;text-align:center;}
+.footermenu ul li{display:inline-block; }
+.footermenu ul li a {
+  color: #E6AF4B;
+  font-size: 18px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+.fixedicon{ position:fixed; left:0;top:200px; width:60px;}
+.fixedicon img{
+  width: 50px;
+}
